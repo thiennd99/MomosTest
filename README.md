@@ -24,4 +24,4 @@ MomosTest App là một ứng dụng di động giúp người dùng quản lý 
 
  - Component test và Unit test: TODO, do thời gian hạn chế em chưa kịp bổ sung test.
  - Bổ sung highlight matching text khi search.
- - Đối với dữ liệu lớn, ta có thể chuyển qua <VirtualizedList/> để tối ưu hoá render list.
+ - Đối với dữ liệu lớn, ta có thể chuyển qua VirtualizedList để tối ưu hoá render list.
