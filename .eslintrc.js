@@ -75,5 +75,6 @@ module.exports = {
 				trailingComma: 'all',
 			},
 		],
+		'react/prop-types': 'off',
 	},
 };

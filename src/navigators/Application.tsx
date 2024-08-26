@@ -8,7 +8,6 @@ import { useTheme } from '@/theme';
 import type { RootStackParamList } from '@/types/navigation';
 
 const Stack = createStackNavigator<RootStackParamList>();
-
 function ApplicationNavigator() {
 	const { variant, navigationTheme } = useTheme();
 

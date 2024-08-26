@@ -1,7 +1,5 @@
 import { View, DimensionValue } from 'react-native';
-
-import LogoLight from '@/theme/assets/images/tom_light.png';
-import LogoDark from '@/theme/assets/images/tom_dark.png';
+import ImageSource from '@/theme/assets/images';
 
 import { ImageVariant } from '@/components/atoms';
 import { useTheme } from '@/theme';
@@ -16,7 +14,10 @@ type Props = {
 function Brand({ height = 200, width = 200, mode = 'contain' }: Props) {
 	const { layout } = useTheme();
 
-	if (!isImageSourcePropType(LogoLight) || !isImageSourcePropType(LogoDark)) {
+	if (
+		!isImageSourcePropType(ImageSource.ic_logo_light) ||
+		!isImageSourcePropType(ImageSource.ic_log_dark)
+	) {
 		throw new Error('Image source is not valid');
 	}
 
@@ -25,8 +26,8 @@ function Brand({ height = 200, width = 200, mode = 'contain' }: Props) {
 			<ImageVariant
 				testID="brand-img"
 				style={[layout.fullHeight, layout.fullWidth]}
-				source={LogoLight}
-				sourceDark={LogoDark}
+				source={ImageSource.ic_logo_light}
+				sourceDark={ImageSource.ic_log_dark}
 				resizeMode={mode}
 			/>
 		</View>
